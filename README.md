@@ -32,6 +32,14 @@ Onceler is written in Ruby. It requires Ruby >= 2.7.2.
 [Rbenv](https://github.com/rbenv/rbenv) provides a convenient way to manage
 installations of multiple Ruby versions.
 
+## Maintenance
+
+- Update gem versions
+  `bundle update`
+
+- Update Bundler version
+  `bundle update --bundler`
+
 ## Running the app
 
 Install gem dependencies
