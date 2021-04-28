@@ -13,7 +13,7 @@ jobs:
       - name: Setup ruby installation
         uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Deploy to cloud.gov
         uses: cloud-gov/cg-cli-tools@main
