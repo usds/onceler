@@ -2,7 +2,7 @@ name: Onceler Deploy
 
 on:
   push:
-    branches: [main, github-actions]
+    branches: [main]
 
 jobs:
   deploy:
