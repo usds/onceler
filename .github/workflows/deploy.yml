@@ -25,22 +25,3 @@ jobs:
           cf_password: ${{ secrets.CF_PASSWORD }}
           cf_org: ${{ secrets.CF_ORG }}
           cf_space: ${{ secrets.CF_SPACE }}
-
-      - name: Modify the README file
-        run: |
-          echo " " >> README.md
-
-      - name: Commit CIDR changes
-        uses: EndBug/add-and-commit@v7
-        with:
-          author_name: Github Action Bot
-          author_email: noreply@github.com
-          message: 'Adding a space to ensure Github action continues working past 60 days of inactivity.'
-          add: 'README.md'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
