@@ -35,4 +35,9 @@ jobs:
      - name: Slack Notification
        uses: rtCamp/action-slack-notify@v2
        env:
+          SLACK_COLOR: ${{ job.status }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_ICON: https://avatars.githubusercontent.com/u/8751968?s=48
+          SLACK_MESSAGE: "deployed to cloud.gov :rocket:"
+          MSG_MINIMAL: true
+          
