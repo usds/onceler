@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Setup ruby installation
         uses: ruby/setup-ruby@v1
         with:
@@ -31,6 +31,5 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_MSG_AUTHOR: usds-bot
-          SLACK_MESSAGE: "GH Actions: deployed Onceler :rocket:"
+          SLACK_MESSAGE: 'GH Actions: deployed Onceler :rocket:'
           MSG_MINIMAL: true
-          
