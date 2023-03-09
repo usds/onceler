@@ -27,7 +27,7 @@ Since Onceler stores secrets in volatile memory, it has no external
 dependencies and no database. All Ruby library dependencies are listed in the
 [Gemfile](./Gemfile).
 
-Onceler is written in Ruby. It requires Ruby >= 3.2.0.
+Onceler is written in Ruby. It requires Ruby >= 3.1.3.
 
 [Rbenv](https://github.com/rbenv/rbenv) provides a convenient way to manage
 installations of multiple Ruby versions.
